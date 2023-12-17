@@ -74,10 +74,12 @@ const Landing = () => {
                         <div className="box">
                             <h3>Valet parking</h3>
                             <div className="image3"><img src="park1.jpg" alt=""/></div>
-                        </div>
+                            <div className="box-text"><p>Effortlessly hand off your keys and worries, allowing our expert team to seamlessly handle your vehicle with our sophisticated valet parking service.</p>
+                        </div></div>
                         <div className="box">
                             <h3>Find parking space</h3>
                             <div className="image3"><img src="park2.jpg" alt=""/></div>
+                            <div className="box-text"><p>Efficient, secure parking solutions for your convenience.</p></div>
                         </div>
                     </div>
                 </div>
@@ -87,10 +89,12 @@ const Landing = () => {
                         <div className="box">
                             <h3>Vulnerable Road Users (VRU)</h3>
                             <div className="image3"><img src="inter1.jpg" alt=""/></div>
+                            <div className="box-text"><p>Ensure utmost safety and responsiveness to pedestrians, cyclists, and motorcyclists in varied road conditions and scenarios.</p></div>
                         </div>
                         <div className="box">
                             <h3>Turning</h3>
                             <div className="image3"><img src="inter2.jpg" alt=""/></div>
+                            <div className="box-text"><p>Perfect the safety and agility of turning maneuvers across diverse road landscapes, ensuring precise and adaptive navigation</p></div>
                         </div>
                     </div>
                 </div>
@@ -98,7 +102,9 @@ const Landing = () => {
             <div className="banner" id="banner5">
                 <div className="text"><h3>Want to tailor the set-up?</h3>
                     <p>From simulation under different weather conditions to demand of specified car action such as overtaking, we're here to satisfy you.</p>
-                    <p>Contact our team for further information！</p>
+                    <div className="box-text">
+                        <p>Contact our team for further information！</p>
+                    </div>
                 </div>
                 <div className="bottom">
                     <div className="buttons-bottom">

@@ -168,7 +168,7 @@ h1.title {
 }
 
 #banner4 {
-    height: 60vh;
+    height: 70vh;
     display: flex;
     align-items: center;
 }
@@ -201,4 +201,9 @@ h1.title {
 
 #banner5 > .text {
     width: 30%;
+}
+
+#banner4 .box-text {
+    padding: 0 2vw 2vh 2vw;
+    text-align: left;
 }

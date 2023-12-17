@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import Button from "@mui/material/Button";
 import DatePicker, {DateObject} from "react-multi-date-picker";
+import { MenuItem } from "@mui/material"
 
 interface props {
     open: boolean;
@@ -48,21 +49,16 @@ const BookDialog: FC<props> = ({open, handleClose}) => {
     return (
         <Dialog open={open} onClose={handleClose}>
             <DialogTitle>Try Our Service</DialogTitle>
-
-            <DialogContentText>
-                Pick a date and try our service by yourself!
-            </DialogContentText>
-            <label>Date: </label>
-            <DatePicker
-                // disabledDates={isDateUnavailable}
-                multiple
-                value={value}
-                onChange={setValue}
-                // shouldDisable={isDateUnavailable}
-                // excludeDates= {unavailableDates}
-            />
-
             <DialogContent>
+                <label>Date: </label>
+                <DatePicker
+                    // disabledDates={isDateUnavailable}
+                    multiple
+                    value={value}
+                    onChange={setValue}
+                    // shouldDisable={isDateUnavailable}
+                    // excludeDates= {unavailableDates}
+                />
                 <TextField
                     autoFocus
                     margin="dense"
@@ -79,29 +75,38 @@ const BookDialog: FC<props> = ({open, handleClose}) => {
                     id="exclusivity"
                     fullWidth
                     variant="standard"
-                    SelectProps={{
-                        native: true,
-                    }}
                 >
-                    <option value="Exclusive">Exclusive</option>
-                    <option value="Shared">Shared</option>
+                    <MenuItem key="exclusive" value="exclusive">
+                        Exclusive
+                    </MenuItem>
+                    <MenuItem key="shared" value="shared">
+                        Shared
+                    </MenuItem>
                 </TextField>
                 <TextField
                     select
                     SelectProps={{
-                        // multiple: true,
-                        // onChange: handleChange,
-                        native: true,
+                        multiple: true,
+                        onChange: handleChange,
                     }}
                     label="Service Type"
                     id="service-type"
-                    // value={serviceTypes}
+                    value={serviceTypes}
                     fullWidth
                     variant="standard"
                 >
-                    <option key="inter" value="Intersection">Intersection</option>
-                    <option key="park" value="Parking">Parking</option>
-                    {/* </select> */}
+                    <MenuItem key="inter" value="intersection">
+                        Intersection
+                    </MenuItem>
+                    <MenuItem key="park" value="park">
+                        Parking
+                    </MenuItem>
+                    <MenuItem key="sim" value="sim">
+                        Simulation
+                    </MenuItem>
+                    <MenuItem key="cons" value="cons">
+                        Tech Consulting
+                    </MenuItem>
                 </TextField>
 
                 <TextField
@@ -110,14 +115,13 @@ const BookDialog: FC<props> = ({open, handleClose}) => {
                     id="service-type"
                     fullWidth
                     variant="standard"
-                    SelectProps={{
-                        native: true,
-                    }}
                 >
-                    {/* <select> */}
-                    <option value="Exclusive">Supervised</option>
-                    <option value="Shared">Unsupervised</option>
-                    {/* </select> */}
+                    <MenuItem key="inter" value="super">
+                        Supervised
+                    </MenuItem>
+                    <MenuItem key="park" value="unsuper">
+                        Unsupervised
+                    </MenuItem>
                 </TextField>
 
             </DialogContent>
