@@ -95,7 +95,7 @@ const BookDialog: FC<props> = ({open, handleClose}) => {
                     }}
                     label="Service Type"
                     id="service-type"
-                    value={serviceTypes}
+                    // value={serviceTypes}
                     fullWidth
                     variant="standard"
                 >
