@@ -109,10 +109,10 @@ const Landing = () => {
                 <div className="bottom">
                     <div className="buttons-bottom">
                         <div className="btn">
-                            <Button id="book" variant="contained">Book a Test</Button>
+                            <Button id="book" variant="contained" onClick={() => setOpenBook(true)}>Book a Test</Button>
                         </div>
                         <div className="btn">
-                            <Button id="contact" variant="contained">Contact Sales</Button>
+                            <Button id="contact" variant="contained" onClick={() => setOpenContact(true)}>Contact Sales</Button>
                         </div>
                     </div>
                 </div>
