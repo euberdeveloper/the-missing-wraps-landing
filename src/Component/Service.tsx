@@ -3,14 +3,16 @@ import "./Service.css"
 
 interface passesProps {
     image: string;
+    title: string;
     text: string;
 }
 
-const Service: FC<passesProps> = ({image, text}) => {
+const Service: FC<passesProps> = ({image, title, text}) => {
     return (
         <div className="service">
             <div className="image"><img src={image} alt={image}/></div>
-            <h2>{text}</h2>
+            <h2>{title}</h2>
+            <p>{text}</p>
         </div>
     );
 }

@@ -1,23 +1,42 @@
-.header {
-    background-color: black;
-    height: 100px;
-    width: 100%;
+body {
+    font-family: Roboto, sans-serif;
 }
 
-.banner {
-    height: calc(100vh - 100px);
+.header {
+    /*background-color: black;*/
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.banner1 {
+    margin-top: -100px;
+    height: calc(90vh - 100px);
     width: 100%;
     /*background-image: url("../../public/highway_bg.jpg");*/
-    background-image: url("../../public/driving_bg.jpg");
+    /*background-image: url("../../public/driving_bg.jpg");*/
+    background-image: url("../../public/video-gif.gif");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.banner {
+    width: 100%;
+}
+
+.banner-bg {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .info-container {
     position: absolute;
-    right: 0;
+    left: 50px;
     width: 40%;
     max-width: 600px;
     height: calc(100% - 100px);
@@ -29,21 +48,157 @@
 .info {
     width: 90%;
     height: 90%;
-    background-color: rgb(255 255 255 / 0.5);
+    /*background-color: rgb(255 255 255 / 0.5);*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.buttons {
-    text-align: center;
+.info h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+span {
+    color: #05a5ba;
+}
+
+.info h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.logo {
+    padding-left: 40px;
+    width: 80%;
+    z-index: 1;
+}
+
+.logo > img {
+    height: 50px;
+}
+
+.buttons-top {
+    /*position: absolute;*/
+    /*right: 10px;*/
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-bottom {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#banner2 {
+    /*height: 100vh;*/
+    /*background-color: black;*/
+    background-image: url("../../public/night_traffic_bg.jpg");
+    background-size: cover;
+    padding-bottom: 15px;
 }
 
 .services {
-    background-color: black;
-    height: 100vh;
+    /*background-color: black;*/
+    height: 70vh;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+#book, #contact {
+    border: 1px solid #05a5ba;;
+    background-color: white;
+    color: #05a5ba;;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#book:hover, #contact:hover {
+    background-color: #05a5ba;
+    color: white;
+}
+
+h1.title {
+    margin: 0;
+    /*padding-top: 10vh;*/
+    /*padding-left: 10vw;*/
+    color: #05a5ba;
+}
+
+.content {
+    margin:0 10% 0 10%;
+    padding-top: 5%;
+}
+
+#banner3 > h3 {
+    color: grey;
+}
+
+#banner3 {
+    display: flex;
+    align-items: center;
+    background-color: #eaeefa;
+    height: 50vh;
+}
+
+#banner3 > .text {
+    padding: 50px;
+    width: 40%;
+}
+
+#banner3 > .image2 {
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+.image2 > img {
+    border-radius: 3%;
+}
+
+#banner4 {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+#banner4 > .container {
+    width: 50%;
+    text-align: center;
+}
+
+.service-details {
+    display: flex;
+}
+
+.box {
+    width: 50%;
+}
+
+.box img {
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+}
+
+#banner5 {
+    background-color: #f5f7fe;
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#banner5 > .text {
+    width: 30%;
 }
